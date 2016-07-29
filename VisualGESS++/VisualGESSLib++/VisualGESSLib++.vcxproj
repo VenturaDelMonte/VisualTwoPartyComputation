@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DCD39C84-D12F-4E48-836A-B0266A262CDA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>VisualGESSLib</RootNamespace>
+    <ProjectName>V2PC++</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\debug_binaries\</OutDir>
+    <IntDir>..\..\intermediate\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>../../release_binaries/</OutDir>
+    <IntDir>../../intermediate\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;BUILD_VGESS;_DEBUG;RANDOM_BIT;_WINDOWS;_USRDLL;VISUALGESSLIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableParallelCodeGeneration>false</EnableParallelCodeGeneration>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <AdditionalIncludeDirectories>..\..\SDK\boost\boost_1_60_0;..\utils\CxImage</AdditionalIncludeDirectories>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>..\..\libraries\$(ProjectName).lib</ImportLibrary>
+      <OutputFile>..\..\debug_binaries\$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\libraries</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>..\..\SDK\boost\boost_1_60_0;..\utils\CxImage</AdditionalIncludeDirectories>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;RANDOM_BIT;BUILD_VGESS;VISUALGESSLIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ImportLibrary>..\..\libraries_release\$(ProjectName).lib</ImportLibrary>
+      <OutputFile>..\..\release_binaries\$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\libraries_release</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>..\..\release_binaries\$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include=".\AssocVector.h" />
+    <ClInclude Include=".\AvailableOperations.h" />
+    <ClInclude Include=".\BaseImage.h" />
+    <ClInclude Include=".\BinaryTree.h" />
+    <ClInclude Include=".\Bitmap.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Relase|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include=".\BitmapEx.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include=".\Circuit.h" />
+    <ClInclude Include=".\Color.h" />
+    <ClInclude Include=".\color_list.h" />
+    <ClInclude Include=".\CriticalSection.h" />
+    <ClInclude Include=".\Debug.h" />
+    <ClInclude Include=".\FastDelegate\FastDelegate.h" />
+    <ClInclude Include=".\FastDelegate\FastDelegateBind.h" />
+    <ClInclude Include=".\file_system.h" />
+    <ClInclude Include=".\Gate.h" />
+    <ClInclude Include=".\Matrix.h" />
+    <ClInclude Include=".\Memory.h" />
+    <ClInclude Include=".\MVCSDecrypter.h" />
+    <ClInclude Include=".\MVCSDecrypter_impl.h" />
+    <ClInclude Include=".\MVCSEncrypter.h" />
+    <ClInclude Include=".\MVCSEncrypter_impl.h" />
+    <ClInclude Include=".\Parser.h" />
+    <ClInclude Include=".\ptmalloc\malloc-2.8.3.h" />
+    <ClInclude Include=".\PureDecrypter.h" />
+    <ClInclude Include=".\PureEncrypter.h" />
+    <ClInclude Include=".\Random.h" />
+    <ClInclude Include=".\Reader.h" />
+    <ClInclude Include=".\Serializable.h" />
+    <ClInclude Include=".\stdafx.h" />
+    <ClInclude Include=".\StdExtension.h" />
+    <ClInclude Include=".\ThreadPool.h" />
+    <ClInclude Include=".\types.h" />
+    <ClInclude Include=".\VCSDecrypter.h" />
+    <ClInclude Include=".\VCSDecrypter_impl.h" />
+    <ClInclude Include=".\VCSEncrypter.h" />
+    <ClInclude Include=".\VCSEncrypter_impl.h" />
+    <ClInclude Include=".\VisualCrypt.h" />
+    <ClInclude Include=".\VisualCrypt_impl.h" />
+    <ClInclude Include=".\Writer.h" />
+    <ClInclude Include="DescentParser.h" />
+    <ClInclude Include="BooleanExpressions.h" />
+    <ClInclude Include="ExpressionTester.h" />
+    <ClInclude Include="FileLogger.h" />
+    <ClInclude Include="CircuitIO.h" />
+    <ClInclude Include="RasterImage.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="ResourceLoader.h" />
+    <ClInclude Include="TreeBuilder.h" />
+    <ClInclude Include="LinkedTree.h" />
+    <ClInclude Include="PureParser.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include=".\Bitmap.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include=".\BitmapEx.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include=".\Circuit.cpp" />
+    <ClCompile Include=".\Circuit_Builder.cpp" />
+    <ClCompile Include=".\Circuit_Solver.cpp" />
+    <ClCompile Include=".\color_list.cpp" />
+    <ClCompile Include=".\CriticalSection.cpp" />
+    <ClCompile Include=".\Debug.cpp" />
+    <ClCompile Include=".\file_system.cpp" />
+    <ClCompile Include=".\Memory.cpp" />
+    <ClCompile Include=".\Parser.cpp" />
+    <ClCompile Include=".\ptmalloc\malloc.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include=".\ptmalloc\ptmalloc3.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include=".\Reader.cpp" />
+    <ClCompile Include=".\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include=".\ThreadPool.cpp">
+    </ClCompile>
+    <ClCompile Include=".\Writer.cpp" />
+    <ClCompile Include="DescentParser.cpp" />
+    <ClCompile Include="DllVisualGESS++.cpp" />
+    <ClCompile Include="Circuit_Draw.cpp" />
+    <ClCompile Include="RasterImage.cpp" />
+    <ClCompile Include="ResourceLoader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="andGate.bmp" />
+    <Image Include="bitmap1.bmp" />
+    <Image Include="filo1.bmp" />
+    <Image Include="filo11_1.bmp" />
+    <Image Include="filo2.bmp" />
+    <Image Include="nAndGate.bmp" />
+    <Image Include="nOrGate.bmp" />
+    <Image Include="orGate.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Circuit">
+      <UniqueIdentifier>{9af24155-3c5e-4477-9466-572461a320f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Circuit\Gate">
+      <UniqueIdentifier>{80eb7d43-7692-4d88-91fe-2704a2bcf49e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{bef3cb85-91a9-4c2b-b61e-5c3024d0ed22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Crypthography">
+      <UniqueIdentifier>{49a0864b-fce4-40e5-b17f-24956054eb2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Crypthography\ColorList">
+      <UniqueIdentifier>{3c3c7109-38d1-4893-8201-514464d67cf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Crypthography\Encrypter">
+      <UniqueIdentifier>{a38dd88e-3c20-4dfe-a586-bf9802aa1251}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Crypthography\Encrypter\MVCS">
+      <UniqueIdentifier>{a9939528-8770-4238-8b62-878f2fec963c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Crypthography\Encrypter\VCS">
+      <UniqueIdentifier>{d1af5451-0576-44d0-86ed-b3e1e38e517b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Crypthography\Decrypter">
+      <UniqueIdentifier>{23cfa5c2-7ad3-4da0-be77-705f0ddbd10f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Crypthography\Decrypter\VCS">
+      <UniqueIdentifier>{c866d059-3fbb-49a9-a15f-ebc8f5267438}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Crypthography\Decrypter\MVCS">
+      <UniqueIdentifier>{6cb2b024-ebcd-4ff0-ac19-42445a59c156}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Images">
+      <UniqueIdentifier>{d92180bd-9570-4214-bf5d-dd074f80d367}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Images\Formats">
+      <UniqueIdentifier>{17c44c08-4aae-4e94-baa9-1f5205842c3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Images\Formats\BMP">
+      <UniqueIdentifier>{28600e40-2a11-4780-b0b8-dc8c6d86062e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Images\Formats\SimpleImage">
+      <UniqueIdentifier>{588708dd-91e4-421f-bfd2-1cf7f3ee4da0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parser">
+      <UniqueIdentifier>{e82edd81-4e90-449d-ba3b-a32722087e8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{1fb50a70-30a5-41b7-ab44-9109a6932f36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\AssocativeVector">
+      <UniqueIdentifier>{e32e5189-c523-478b-b64a-4dbc9f9cf5c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\FastDelegate">
+      <UniqueIdentifier>{b6aa07b7-6ccc-4e37-a952-1b63a7e7238c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\FileSystem">
+      <UniqueIdentifier>{19d214b2-5836-43b7-b2a2-43f2539d8c3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Memory">
+      <UniqueIdentifier>{80297c6a-784d-4ff8-a46e-6371d7315043}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Memory\ptmalloc">
+      <UniqueIdentifier>{a9c05f39-1c88-4a1d-bf58-f8aeadeb5018}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Random">
+      <UniqueIdentifier>{67254f47-cd9b-46a7-92ec-285bbbc9e3ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Reader">
+      <UniqueIdentifier>{52b40450-1660-4ec7-8e8c-afc654f71d98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\StdExtension">
+      <UniqueIdentifier>{5fe2e789-001b-474d-94ac-ca9cfea0cfde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Writer">
+      <UniqueIdentifier>{e429a1aa-95bd-4907-9b2b-af4b3ec5be38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\debug">
+      <UniqueIdentifier>{0a313259-6c3f-46a1-9f42-63f3357c7c76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Matrix">
+      <UniqueIdentifier>{19eb5818-55c8-4b69-86f6-712b38536ddb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Thread Pool">
+      <UniqueIdentifier>{f6e1ccb3-71df-4797-99eb-a5590c5b8225}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Profiler">
+      <UniqueIdentifier>{79061803-6950-49e9-9f2a-151483fbab47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Trees">
+      <UniqueIdentifier>{f0eb8ad0-c3a3-4627-871b-c18816a5bf64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Trees\LinkedTree">
+      <UniqueIdentifier>{2f50c8b6-5647-4be5-bf70-39750586e10e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Trees\CompleteBinaryTree">
+      <UniqueIdentifier>{c3a7cb17-fdd9-4f53-a7a7-bbda2bcd0b6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Circuit\Tester">
+      <UniqueIdentifier>{22316172-f6fb-4e35-a8a5-f33e787a493c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{3d18550b-5dce-4956-a7f8-7996d01b1c68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Resource Loader">
+      <UniqueIdentifier>{5a988df7-2aaa-4ac3-b91a-1b73246c85b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Images\Formats\RasterImage">
+      <UniqueIdentifier>{2afb5396-b693-476a-9411-072b2f93d9c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Circuit\InterOper">
+      <UniqueIdentifier>{3558e4ce-6ae4-42f1-a2bf-76d1c9e5c345}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include=".\BinaryTree.h">
+      <Filter>Trees\CompleteBinaryTree</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Circuit.h">
+      <Filter>Circuit</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Gate.h">
+      <Filter>Circuit\Gate</Filter>
+    </ClInclude>
+    <ClInclude Include=".\stdafx.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include=".\VisualCrypt.h">
+      <Filter>Crypthography</Filter>
+    </ClInclude>
+    <ClInclude Include=".\VisualCrypt_impl.h">
+      <Filter>Crypthography</Filter>
+    </ClInclude>
+    <ClInclude Include=".\color_list.h">
+      <Filter>Crypthography\ColorList</Filter>
+    </ClInclude>
+    <ClInclude Include=".\PureEncrypter.h">
+      <Filter>Crypthography\Encrypter</Filter>
+    </ClInclude>
+    <ClInclude Include=".\MVCSEncrypter.h">
+      <Filter>Crypthography\Encrypter\MVCS</Filter>
+    </ClInclude>
+    <ClInclude Include=".\MVCSEncrypter_impl.h">
+      <Filter>Crypthography\Encrypter\MVCS</Filter>
+    </ClInclude>
+    <ClInclude Include=".\VCSEncrypter.h">
+      <Filter>Crypthography\Encrypter\VCS</Filter>
+    </ClInclude>
+    <ClInclude Include=".\VCSEncrypter_impl.h">
+      <Filter>Crypthography\Encrypter\VCS</Filter>
+    </ClInclude>
+    <ClInclude Include=".\PureDecrypter.h">
+      <Filter>Crypthography\Decrypter</Filter>
+    </ClInclude>
+    <ClInclude Include=".\VCSDecrypter.h">
+      <Filter>Crypthography\Decrypter\VCS</Filter>
+    </ClInclude>
+    <ClInclude Include=".\VCSDecrypter_impl.h">
+      <Filter>Crypthography\Decrypter\VCS</Filter>
+    </ClInclude>
+    <ClInclude Include=".\MVCSDecrypter_impl.h">
+      <Filter>Crypthography\Decrypter\MVCS</Filter>
+    </ClInclude>
+    <ClInclude Include=".\MVCSDecrypter.h">
+      <Filter>Crypthography\Decrypter\MVCS</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Serializable.h">
+      <Filter>Images</Filter>
+    </ClInclude>
+    <ClInclude Include=".\BaseImage.h">
+      <Filter>Images\Formats</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Color.h">
+      <Filter>Images\Formats</Filter>
+    </ClInclude>
+    <ClInclude Include=".\BitmapEx.h">
+      <Filter>Images\Formats\BMP</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Bitmap.h">
+      <Filter>Images\Formats\BMP</Filter>
+    </ClInclude>
+    <ClInclude Include=".\AvailableOperations.h">
+      <Filter>Parser</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Parser.h">
+      <Filter>Parser</Filter>
+    </ClInclude>
+    <ClInclude Include=".\types.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include=".\AssocVector.h">
+      <Filter>Utility\AssocativeVector</Filter>
+    </ClInclude>
+    <ClInclude Include=".\FastDelegate\FastDelegate.h">
+      <Filter>Utility\FastDelegate</Filter>
+    </ClInclude>
+    <ClInclude Include=".\FastDelegate\FastDelegateBind.h">
+      <Filter>Utility\FastDelegate</Filter>
+    </ClInclude>
+    <ClInclude Include=".\file_system.h">
+      <Filter>Utility\FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Memory.h">
+      <Filter>Utility\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include=".\ptmalloc\malloc-2.8.3.h">
+      <Filter>Utility\Memory\ptmalloc</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Random.h">
+      <Filter>Utility\Random</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Reader.h">
+      <Filter>Utility\Reader</Filter>
+    </ClInclude>
+    <ClInclude Include=".\StdExtension.h">
+      <Filter>Utility\StdExtension</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Writer.h">
+      <Filter>Utility\Writer</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Debug.h">
+      <Filter>Utility\debug</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Matrix.h">
+      <Filter>Utility\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include=".\CriticalSection.h">
+      <Filter>Utility\Thread Pool</Filter>
+    </ClInclude>
+    <ClInclude Include=".\ThreadPool.h">
+      <Filter>Utility\Thread Pool</Filter>
+    </ClInclude>
+    <ClInclude Include="DescentParser.h">
+      <Filter>Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="PureParser.h">
+      <Filter>Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedTree.h">
+      <Filter>Trees\LinkedTree</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeBuilder.h">
+      <Filter>Circuit</Filter>
+    </ClInclude>
+    <ClInclude Include="BooleanExpressions.h">
+      <Filter>Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpressionTester.h">
+      <Filter>Circuit\Tester</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceLoader.h">
+      <Filter>Utility\Resource Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="FileLogger.h">
+      <Filter>Utility\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="RasterImage.h">
+      <Filter>Images\Formats\RasterImage</Filter>
+    </ClInclude>
+    <ClInclude Include="CircuitIO.h">
+      <Filter>Circuit\InterOper</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include=".\Circuit_Builder.cpp">
+      <Filter>Circuit</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Circuit_Solver.cpp">
+      <Filter>Circuit</Filter>
+    </ClCompile>
+    <ClCompile Include=".\stdafx.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include=".\color_list.cpp">
+      <Filter>Crypthography\ColorList</Filter>
+    </ClCompile>
+    <ClCompile Include=".\BitmapEx.cpp">
+      <Filter>Images\Formats\BMP</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Bitmap.cpp">
+      <Filter>Images\Formats\BMP</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Parser.cpp">
+      <Filter>Parser</Filter>
+    </ClCompile>
+    <ClCompile Include=".\file_system.cpp">
+      <Filter>Utility\FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Memory.cpp">
+      <Filter>Utility\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include=".\ptmalloc\malloc.c">
+      <Filter>Utility\Memory\ptmalloc</Filter>
+    </ClCompile>
+    <ClCompile Include=".\ptmalloc\ptmalloc3.c">
+      <Filter>Utility\Memory\ptmalloc</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Reader.cpp">
+      <Filter>Utility\Reader</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Writer.cpp">
+      <Filter>Utility\Writer</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Debug.cpp">
+      <Filter>Utility\debug</Filter>
+    </ClCompile>
+    <ClCompile Include=".\CriticalSection.cpp">
+      <Filter>Utility\Thread Pool</Filter>
+    </ClCompile>
+    <ClCompile Include=".\ThreadPool.cpp">
+      <Filter>Utility\Thread Pool</Filter>
+    </ClCompile>
+    <ClCompile Include="DllVisualGESS++.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Circuit.cpp">
+      <Filter>Circuit</Filter>
+    </ClCompile>
+    <ClCompile Include="DescentParser.cpp">
+      <Filter>Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="Circuit_Draw.cpp">
+      <Filter>Circuit</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceLoader.cpp">
+      <Filter>Utility\Resource Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="RasterImage.cpp">
+      <Filter>Images\Formats\RasterImage</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="andGate.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="bitmap1.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="filo1.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="filo11_1.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="filo2.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="nAndGate.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="nOrGate.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="orGate.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

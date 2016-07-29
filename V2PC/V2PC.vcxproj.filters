@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Debug">
+      <UniqueIdentifier>{228a75f0-7942-4b8d-af09-5aa8ef2e4381}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="MainForm">
+      <UniqueIdentifier>{e0d5a106-c76f-4e68-8783-41b487b8fe48}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Debug.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="MainForm.h">
+      <Filter>MainForm</Filter>
+    </ClInclude>
+    <ClInclude Include="V2PC.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="InputPanel.h">
+      <Filter>MainForm</Filter>
+    </ClInclude>
+    <ClInclude Include="CircuitPanel.h">
+      <Filter>MainForm</Filter>
+    </ClInclude>
+    <ClInclude Include="CircuitDialog.h">
+      <Filter>MainForm</Filter>
+    </ClInclude>
+    <ClInclude Include="GateDialog.h">
+      <Filter>MainForm</Filter>
+    </ClInclude>
+    <ClInclude Include="HelpForm.h">
+      <Filter>MainForm</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="V2PC.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="MainForm.cpp">
+      <Filter>MainForm</Filter>
+    </ClCompile>
+    <ClCompile Include="InputPanel.cpp">
+      <Filter>MainForm</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFormHelper.cpp">
+      <Filter>MainForm</Filter>
+    </ClCompile>
+    <ClCompile Include="CircuitPanel.cpp">
+      <Filter>MainForm</Filter>
+    </ClCompile>
+    <ClCompile Include="CircuitDialog.cpp">
+      <Filter>MainForm</Filter>
+    </ClCompile>
+    <ClCompile Include="GateDialog.cpp">
+      <Filter>MainForm</Filter>
+    </ClCompile>
+    <ClCompile Include="HelpForm.cpp">
+      <Filter>MainForm</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="app.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainForm.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputPanel.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CircuitDialog.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CircuitPanel.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GateDialog.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpForm.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
